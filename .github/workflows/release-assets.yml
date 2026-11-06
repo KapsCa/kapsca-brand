@@ -1,0 +1,25 @@
+name: release-assets
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  upload-dist:
+    runs-on: ubuntu-latest
+    steps:
+      # v7.0.1, pinned by full SHA (same pin as the security workflows).
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Package dist/
+        run: |
+          (cd dist && zip -qr ../kapsca-brand-dist.zip .)
+
+      - name: Upload zip to the release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release upload "$GITHUB_REF_NAME" kapsca-brand-dist.zip --clobber --repo "$GITHUB_REPOSITORY"
