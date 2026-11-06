@@ -1,0 +1,21 @@
+name: dist-integrity
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-dist:
+    runs-on: ubuntu-latest
+    steps:
+      # v7.0.1, pinned by full SHA (same pin as the security workflows).
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Verify dist manifest (sha256)
+        run: |
+          cd dist
+          sha256sum -c manifest.sha256
