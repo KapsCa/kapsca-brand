@@ -6,7 +6,7 @@ Reglas de aplicabilidad del kit. Medidas sobre los tokens de `tokens.json` (cont
 
 | Contexto | Asset | Motivo |
 |---|---|---|
-| README en GitHub (dark) | `kapsca-logo-principal-dark.png` | fondo horneado `#0D0E12`, no transparencias |
+| README en GitHub (dark) | `kapsca-logo-principal-transparente.png` | SIN fondo horneado: el tile `#0D0E12` del PNG dark resalta feo contra el canvas de GitHub |
 | README en GitHub (light) | `kapsca-logo-monocromo-negro.svg` | tinta única `#0D0E12`, escalable |
 | Favicon web | `favicon.ico` + `<link rel="icon" type="image/svg+xml" href="kapsca-isotipo.svg">` | multi-size + vector moderno |
 | Banner de repo | `kapsca-repo-banner-1280x640.png` | resolución exacta del preview de GitHub |
@@ -43,3 +43,5 @@ Ese set pesa ~370 KB y NO depende de este repo (copia). Los archivos completos/r
 ## 5. Pipeline para repos nuevos
 
 `repo-bootstrap` (installer `install-repo-standards.sh`, paso brand) copia el set desde la copia vendida en `dev-skills/repo-bootstrap/assets/kapsca-brand/`, el cual se actualiza desde el release del SOT.
+
+> **Regla de fondo horneado**: el PNG `-dark` (fondo `#0D0E12` horneado) sólo para contextos que ya son de ese color (avatares, social preview, fondos propios). En READMEs de GitHub usar SIEMPRE el `-transparente` (dark) o el monocromo SVG (light).

@@ -1,9 +1,9 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="dist/kapsca-logo-principal-dark.png">
+  <source media="(prefers-color-scheme: dark)" srcset="dist/kapsca-logo-principal-transparente.png">
   <source media="(prefers-color-scheme: light)" srcset="dist/kapsca-logo-monocromo-negro.svg">
-  <img src="dist/kapsca-logo-principal-dark.png" alt="KapsCa" width="320">
+  <img src="dist/kapsca-logo-principal-transparente.png" alt="KapsCa" width="320">
 </picture>
 
 **KapsCa brand kit** · paleta medida en `docs/tokens.json` · distribuido en `dist/`
