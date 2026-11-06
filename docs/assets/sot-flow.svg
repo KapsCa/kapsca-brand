@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 310" width="420" height="310" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="420" height="310" fill="#0D0E12"/>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#CE97EB"/></marker></defs>
+<text x="30" y="38" fill="#ECE9F2" font-size="16" font-weight="700">Fuente única, copias vendidas</text>
+<rect x="30" y="84" width="150" height="70" rx="10" fill="#180F1F" stroke="#CE97EB" stroke-width="1.5"/>
+<text x="105.0" y="112.0" fill="#CE97EB" font-size="15" font-weight="600" text-anchor="middle">kapsca-brand</text>
+<text x="105.0" y="132.0" fill="#8F8A9F" font-size="11.5" text-anchor="middle">dist/ + releases</text>
+<rect x="220" y="84" width="170" height="70" rx="10" fill="#180F1F" stroke="#3A2445" stroke-width="1.5"/>
+<text x="305.0" y="112.0" fill="#ECE9F2" font-size="15" font-weight="600" text-anchor="middle">bundle del pipeline</text>
+<text x="305.0" y="132.0" fill="#8F8A9F" font-size="11.5" text-anchor="middle">dev-skills/repo-bootstrap</text>
+<rect x="220" y="190" width="170" height="70" rx="10" fill="#180F1F" stroke="#B26FE0" stroke-width="1.5"/>
+<text x="305.0" y="218.0" fill="#ECE9F2" font-size="15" font-weight="600" text-anchor="middle">assets/brand/</text>
+<text x="305.0" y="238.0" fill="#8F8A9F" font-size="11.5" text-anchor="middle">en cada repo</text>
+<line x1="180" y1="119" x2="220" y2="119" stroke="#CE97EB" stroke-width="1.6" marker-end="url(#ar)"/>
+<line x1="305" y1="154" x2="305" y2="190" stroke="#CE97EB" stroke-width="1.6" marker-end="url(#ar)"/>
+<text x="30" y="185" fill="#8F8A9F" font-size="11.5">release v0.2.0</text>
+<text x="30" y="201" fill="#8F8A9F" font-size="11.5">zip versionado</text>
+<text x="30" y="290" fill="#8F8A9F" font-size="11.5">Cada repo queda autosustentable: si el kit se mueve, las imágenes siguen resolviendo.</text>
+
+</svg>
